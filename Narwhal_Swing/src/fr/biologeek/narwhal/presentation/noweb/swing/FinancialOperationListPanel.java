@@ -8,16 +8,19 @@ public class FinancialOperationListPanel extends JPanel {
 	
 	public FinancialOperationListPanel() {
 		super();
-		this.setUpPanelComponents();
+		this.setUpTopPanelComponents();
+		this.setUpDownPanelComponents();
 	}
 
-	
-	private void setUpPanelComponents (){
-		
+	private void setUpTopPanelComponents (){
 		
 		
 	}
-	
+
+	private void setUpDownPanelComponents() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 	
