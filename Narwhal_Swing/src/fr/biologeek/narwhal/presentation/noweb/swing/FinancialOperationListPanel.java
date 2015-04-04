@@ -8,11 +8,11 @@ public class FinancialOperationListPanel extends JPanel {
 	
 	public FinancialOperationListPanel() {
 		super();
-		this.setPanelComponents();
+		this.setUpPanelComponents();
 	}
 
 	
-	private void setPanelComponents (){
+	private void setUpPanelComponents (){
 		
 		
 		

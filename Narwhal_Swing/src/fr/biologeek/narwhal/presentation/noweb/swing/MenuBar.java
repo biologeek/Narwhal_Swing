@@ -13,9 +13,11 @@ public class MenuBar extends JMenuBar {
 
 	
 	
-	JMenu menuOperations,menuParameters;
+	JMenu menuOperations,menuParameters,menuItemCurrency;
 	JMenuItem menuItemAddOperation,menuItemUpdateOperation,menuItemDeleteOperation
-	,menuItemImposition,menuItemCurrency,menuItemOptions;
+	,menuItemImposition,menuItemOptions,
+	
+	menuItemCurrencyEuro,menuItemCurrencyDollar,menuItemCurrencyPound;
 	
 	public MenuBar (){
 		this.setUpMenus();
@@ -25,13 +27,39 @@ public class MenuBar extends JMenuBar {
 		
 		this.menuOperations = new JMenu("Opérations");
 		this.menuParameters = new JMenu("Paramètres");
-		this.menuItemAddOperation = new JMenuItem("Ajouter");
+		
+		
+		this.menuItemAddOperation = new JMenuItem("Ajouter");	
+		this.menuItemUpdateOperation = new JMenuItem("Modifier");
+		this.menuItemDeleteOperation = new JMenuItem("Supprimer");
+		
+		this.menuItemCurrency = new JMenu("Devises");
+		this.menuItemImposition = new JMenuItem("Impôts");
+		this.menuItemOptions = new JMenuItem("Options");
+		menuItemCurrencyDollar = new JMenuItem("Dollar");
+		menuItemCurrencyEuro = new JMenuItem("Euro");
+		menuItemCurrencyPound = new JMenuItem("Livre Sterling");
+		
+		
+		
+		menuItemCurrency.add(menuItemCurrencyDollar);
+		menuItemCurrency.add(menuItemCurrencyEuro);
+		menuItemCurrency.add(menuItemCurrencyPound);
+		
+		menuOperations.add(menuItemAddOperation);
+		menuOperations.add(menuItemUpdateOperation);
+		menuOperations.add(menuItemDeleteOperation);
+		
+		menuParameters.add(menuItemCurrency);
+		menuParameters.add(menuItemImposition);
+		menuParameters.add(menuItemOptions);
+		
+		
 		
 		this.add(menuOperations);
 		this.add(menuParameters);
 		
-		this.menuItemUpdateOperation = new JMenuItem("Modifier");
-		this.menuItemDeleteOperation = new JMenuItem("Supprimer");
+		
 		
 		
 	}

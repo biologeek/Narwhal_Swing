@@ -17,6 +17,9 @@ public class MainFrame extends JFrame {
 		
 		
 		contentPane = new FinancialOperationListPanel ();
+		
+		menuBar = new MenuBar();
+		this.setSize(600, 600);
 		this.setContentPane(contentPane);
 		this.setJMenuBar(menuBar);
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
