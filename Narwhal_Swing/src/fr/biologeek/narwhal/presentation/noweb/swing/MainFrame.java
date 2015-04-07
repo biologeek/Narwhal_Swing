@@ -20,9 +20,11 @@ public class MainFrame extends JFrame {
 		
 		menuBar = new MenuBar();
 		this.setSize(600, 600);
+		this.setLocationRelativeTo(null);
+
 		this.setContentPane(contentPane);
 		this.setJMenuBar(menuBar);
-		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		this.setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
 		
 		this.setVisible(true);
 	}

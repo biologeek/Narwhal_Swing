@@ -4,6 +4,8 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 
+import fr.biologeek.narwhal.presentation.noweb.swing.listeners.MenuBarListener;
+
 public class MenuBar extends JMenuBar {
 
 	/**
@@ -31,6 +33,7 @@ public class MenuBar extends JMenuBar {
 		//Operations menu items
 		this.menuItemAddOperation = new JMenuItem("Ajouter");
 		this.menuItemAddOperation.setActionCommand("AddOp");
+		this.menuItemAddOperation.addActionListener(new MenuBarListener());
 		
 		this.menuItemUpdateOperation = new JMenuItem("Modifier");
 		this.menuItemUpdateOperation.setActionCommand("ModOp");
